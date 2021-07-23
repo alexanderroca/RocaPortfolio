@@ -1,0 +1,129 @@
+<section id="portfolio">
+    <div class="container" >
+        <h2><strong>Projects</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="row">
+        
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div  class="card-header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div id="teamTraveler-img" class="img-wrap" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/rocaPortfolio.png)'}" >
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                            <h3 class="card-title">RocaPortfolio</h3>
+                            <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                            <p class="card-text">Angular12, HTML5, CSS, BootStrap</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <a href="https://github.com/zinedineBenkhider/team_traveler" target="_blank" type="button" class="btn btn-primary mr-3" style="margin:5px;">Code Source</a> 
+                                <button (click)="detailOnClick('teamTraveler')" type="button" class="btn btn-primary" style="margin:5px;">+ Project details</button>
+                            </div>
+                            <div *ngIf="teamTravelerIsShown" class="mt-3">
+                                <p>CV in a form of responsive WEB site that I put as open-source on GitHub.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+
+                    <div  class="card-header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div  id="mautic-img" class="img-wrap" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/hashtable-image.png)'}" >
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Hash table</h3>
+                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                        <p class="card-text">IntelliJ IDEA</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/alexanderroca/HashTable" target="_blank" type="button" class="btn btn-primary mr-3" style="margin:5px;">Code Source</a> 
+                            <button (click)="detailOnClick('mauticMonitoring')"  type="button" class="btn btn-primary" style="margin:5px;">+ Project details</button>
+                        </div>
+                        <div *ngIf="mauticMonitoringIsShown" class="mt-3">
+                            <p>A hash table is a data structure that is used to store keys/value pairs. It uses a hash function to compute an index into 
+                                an array in which an element will be inserted or searched. By using a good hash function, hashing can work well. 
+                                Under reasonable assumptions, the average time required to search for an element in a hash table is <strong>O(1)</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
+                <div class="card shadow-lg p-3  bg-white rounded">
+                    <div  class="card-header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div id="pokedex-img" class="img-wrap" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/trie-image.png)'}" >
+                        </div> 
+                    </div>
+                   
+                    <div class="card-body">
+                        <h3 class="card-title">Trie</h3>
+                        <h5 class="card-title"><strong>Technologies:</strong> </h5>
+                        <p class="card-text">IntelliJ IDEA</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/alexanderroca/Trie" target="_blank" type="button" class="btn btn-primary mr-3" style="margin:5px;">Code Source</a> 
+                            <button (click)="detailOnClick('pokedex')" type="button" class="btn btn-primary" style="margin:5px;">+ Project details</button>
+                        </div>
+                        <div *ngIf="pokedexIsShown" class="mt-3">
+                            <p>Trie is an efficient information re<strong>Trie</strong>val data structure. Using Trie, search complexities can be brought 
+                                to optimal limit (key length). If we store keys in binary search tree, a well balanced BST will need time proportional to 
+                                <strong>M * log N</strong>, where <strong>M</strong> is maximum string length and <strong>N</strong> is number of keys in tree.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded"> 
+              
+                    <div  class="header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div id="portfolio-img" class="img-wrap card-header" style="height: 300px;width: 100%;" [ngStyle]="{backgroundImage:'url(assets/images/avlTree-image.png)'}" >
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">AVL Tree</h3>
+                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                        <p class="card-text">IntelliJ IDEA</p>
+                        
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/alexanderroca/AVL_Tree" target="_blank" type="button" class="btn btn-primary mr-3" style="margin:5px;">Code Source</a> 
+                            <button (click)="detailOnClick('portfolio')"  type="button" class="btn btn-primary" style="margin:5px;">+ Project details</button>
+                        </div>
+                    
+                        <div *ngIf="portfolioIsShown" class="mt-3">
+                            <p>AVL tree is a self-balancing Binary Search Tree (<strong>BST</strong>) where the difference between heights of left and 
+                                right subtrees cannot be more than one for all nodes. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded"> 
+              
+                    <div  class="header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div id="riddle-img" class="img-wrap card-header" style="height: 300px;width: 100%;" [ngStyle]="{backgroundImage:'url(assets/images/redBlackTree-image.png)'}" >
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Red-black Tree</h3>
+                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                        <p class="card-text">IntelliJ IDEA</p>
+                        
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/alexanderroca/Red-Black-Tree" target="_blank" type="button" class="btn btn-primary mr-3" style="margin:5px;">Code Source</a> 
+                            <button (click)="detailOnClick('riddleIsShown')"  type="button" class="btn btn-primary" style="margin:5px;">+ Project details</button>
+                        </div>
+                    
+                        <div *ngIf="riddleIsShown" class="mt-3">
+                            <p>A red-black tree is a binary search tree which has the following red-black properties: <strong>Every node is either red or black</strong>. 
+                                <strong>Every leaf (NULL) is black</strong>. <strong>If a node is red, then both its children are black</strong>.   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>

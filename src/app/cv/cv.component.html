@@ -1,0 +1,149 @@
+<section id="cv">
+    <div class="container">
+        <h2><strong>Curriculum Vitae</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="row">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Education</strong></h4>
+
+                <ul class="timeline">
+                    <li>
+                        <h5><strong>Degree in Computer Engineer</strong> </h5>
+                        <em class="font-italic">La Salle Campus Barcelona, Spain</em>
+                        <p class="year p-2 d-flex justify-content-center">2016 - At present</p>
+                    </li>
+                    <li>
+                        <h5><strong>CISCO CCNA Routing & Switching</strong> </h5>
+                        <em class="font-italic">La Salle Campus Barcelona, Spain</em>
+                        <p class="year p-2 d-flex justify-content-center">2017</p>
+                    </li>
+                    <li>
+                        <h5>Bachelorship of Technological field</h5>
+                        <em class="font-italic">Escuela Pia de Sarria, Spain</em>
+                        <p class="year p-2 d-flex justify-content-center">2012 - 2014</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Work Experience</strong></h4>
+                <ul class="timeline">
+                    <li>
+                        <h5>IT Intern</h5>
+                        <em>MB92, Barcelona, Spain</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2021 (At present)</p>
+                            <button (click)="detailOnClick('freelanceScotfy_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="freelanceScotfyIsShown">
+                            <strong>Task 1:</strong> Collect information from all related departments in the sales phase.<br>
+                            <strong>Task 2:</strong> Determine the necessary fields to streamline the procedures with the client for all departments involved in Salesforce.<br>
+                            <strong>Task 3:</strong> Discuss in the meetings of each sprint of the project to provide feedback on the project situation.<br>
+                            <strong>Technologies:</strong> Teams, Word, PowerPoint, Excel, Salesforce
+                        </p>
+                    </li>
+                    <li>
+                        <h5>IT Technician</h5>
+                        <em>GSMA, Barcelona, Spain</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2020 - 2021 (1 month)</p>
+                            <button (click)="detailOnClick('freelance_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="freelanceIsShown">
+                            <strong>Task 1:</strong> Configuration and labeling of computer services on data base.<br>
+                            <strong>Task 2:</strong> Solve failures detected by the client regarding the services given by GSMA.<br>
+                            <strong>Achievements:</strong> Improve the quality results of computer services regarding the past event.<br>
+                            <strong>Technologies:</strong> Internal program to manage network services and configuration of these services
+                        </p>
+                    </li>
+                    <li>
+                        <h5>IT Technician</h5>
+                        <em>Fira de Barcelona, Barcelona, Spain</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2019 - 2020 (1 month)</p>
+                            <button (click)="detailOnClick('alternance_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="alternanceIsShown">
+                            <strong>Task 1:</strong> Solve failures detected by the client regarding the services given by GSMA.<br>
+                            <strong>Task 2:</strong> Detect Wi-Fi networks that hadn't been contracted to Fira Barcelona.<br>
+                            <strong>Technologies:</strong> Wifi Analyzer
+                        </p>
+                    </li>
+                    <li>
+                        <h5>IT Technician</h5>
+                        <em>GSMA, Barcelona, Spain</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2019 - 2020 (1 month)</p>
+                            <button (click)="detailOnClick('stage_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+
+                        </div>
+                        <p *ngIf="stageIsShown">
+                            <strong>Task 1:</strong> Configuration and labeling of computer services on data base.<br>
+                            <strong>Task 2:</strong> Solve failures detected by the client regarding the services given by GSMA.<br>
+                            <strong>Achievements:</strong> Improve the quality results of computer services regarding the past event.<br>
+                            <strong>Technologies:</strong> Internal program to manage network services and configuration of these services
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="container row">
+                    <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h4><strong>Languages</strong></h4>
+                        <div class="noProgress langue">
+                            <span class=""><img src="assets/images/spain-flag.png" width="20"
+                                    alt="spanish flag"><strong> Spanish</strong> <i class="val">
+                                    Native</i></span>
+                        </div>
+                        <div class="noProgress langue">
+                            <span class=""><img src="assets/images/catalonia-flag.png" width="20"
+                                    alt="catalan flag"><strong> Catalan</strong> <i class="val">
+                                    Native</i></span>
+                        </div>
+                        <div class="noProgress langue">
+                            <span class=""><img src="assets/images/uk-flag.png" width="20"
+                                    alt="united kingdom flag"><strong> English</strong> <i class="val"> Basic professional competence</i></span>
+                        </div>
+                        <div class="noProgress langue">
+                            <span class=""><img src="assets/images/russia-flag.png" width="20"
+                                    alt="russian flag"><strong> Russian</strong> <i class="val"> Limited proficiency</i></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container row">
+                    <div class="mt-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h4><strong>Center of interest</strong></h4>
+                        <div class="noProgress langue">
+                            <span>
+                                <i class="bi bi-life-preserver"></i><strong> Sport</strong> <i class="val"> Basketball (2007 - 2018) & Krav Maga (2019 - At present)</i>
+                            </span>
+                        </div>
+
+                        <div class="noProgress langue">
+                            <span>
+                                <i class="bi bi-compass-fill"></i><strong> Travel</strong> <i class="val">
+                                    Italy, France, Monaco, Switzerland, Netherlands, United Kingdom, Mexico, Finland, Russia, Canada, United States of America, Japan, Turkey</i>
+                            </span>
+                        </div>
+
+                        <div class="noProgress langue">
+                            <span>
+                                <i class="bi bi-controller"></i><strong> Videogames</strong> <i class="val">
+                                    Total war: Warhammer I&II, League of Legends, Dark Souls, Ghost of Tsushima</i>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
