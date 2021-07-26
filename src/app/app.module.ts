@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { CompetencesComponent } from './competences/competences.component';
 import { CvComponent } from './cv/cv.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutMeComponent,
     CompetencesComponent,
     CvComponent,
-    ContactMeComponent,
     ProjectsComponent
   ],
   imports: [
