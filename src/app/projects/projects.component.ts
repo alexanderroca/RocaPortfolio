@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
   teamTravelerIsShown : boolean=false;
   cteamTravelerIsShown : boolean=false;
+  instaSalleIsShown : boolean=false;
+  instaSalleIsShown2 : boolean=false;
   mauticMonitoringIsShown : boolean=false;
   portfolioIsShown : boolean=false;
   pokedexIsShown : boolean=false;
@@ -16,10 +18,30 @@ export class ProjectsComponent implements OnInit {
   detailOnClick(project:String){
     if(project=="teamTraveler"){
       this.teamTravelerIsShown = !this.teamTravelerIsShown;
+      this.instaSalleIsShown=false;
+      this.instaSalleIsShown2=false;
       this.mauticMonitoringIsShown=false;
       this.portfolioIsShown =false;
       this.pokedexIsShown=false;
       this.riddleIsShown=false;
+    }
+    else if(project=="instaSalle") {
+      this.instaSalleIsShown = !this.instaSalleIsShown;
+      this.teamTravelerIsShown=false;
+      this.portfolioIsShown =false;
+      this.pokedexIsShown=false;
+      this.riddleIsShown=false;
+      this.mauticMonitoringIsShown=false;
+      this.instaSalleIsShown2=false;
+    }
+    else if(project=="instaSalle2") {
+      this.instaSalleIsShown2 = !this.instaSalleIsShown2;
+      this.teamTravelerIsShown=false;
+      this.portfolioIsShown =false;
+      this.pokedexIsShown=false;
+      this.riddleIsShown=false;
+      this.mauticMonitoringIsShown=false;
+      this.instaSalleIsShown=false;
     }
     else if(project=="mauticMonitoring"){
       this.mauticMonitoringIsShown = !this.mauticMonitoringIsShown;
@@ -27,6 +49,8 @@ export class ProjectsComponent implements OnInit {
       this.portfolioIsShown =false;
       this.pokedexIsShown=false;
       this.riddleIsShown=false;
+      this.instaSalleIsShown=false;
+      this.instaSalleIsShown2=false;
     }
     else if(project=="portfolio"){
       this.portfolioIsShown = !this.portfolioIsShown;
@@ -34,6 +58,8 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown =false;
       this.pokedexIsShown=false;
       this.riddleIsShown=false;
+      this.instaSalleIsShown=false;
+      this.instaSalleIsShown2=false;
     }
     else if(project=="pokedex"){
       this.pokedexIsShown = !this.pokedexIsShown;
@@ -41,6 +67,8 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown =false;
       this.portfolioIsShown=false;
       this.riddleIsShown=false;
+      this.instaSalleIsShown=false;
+      this.instaSalleIsShown2=false;
     }
     else if(project=="riddleIsShown"){
       this.riddleIsShown = !this.riddleIsShown;
@@ -48,7 +76,8 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown =false;
       this.portfolioIsShown=false;
       this.pokedexIsShown=false;
-
+      this.instaSalleIsShown=false;
+      this.instaSalleIsShown2=false;
     }
     
 

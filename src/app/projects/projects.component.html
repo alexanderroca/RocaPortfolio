@@ -29,6 +29,53 @@
                 <div class="card shadow-lg p-3 mb-5 bg-white rounded">
 
                     <div  class="card-header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div  id="mautic-img" class="img-wrap" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/sorting-image.jpg)'}" >
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">InstaSalle</h3>
+                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                        <p class="card-text">IntelliJ IDEA, JSON</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/alexanderroca/InstaSalle" target="_blank" type="button" class="btn btn-primary mr-3" style="margin:5px;">Code Source</a> 
+                            <button (click)="detailOnClick('instaSalle')"  type="button" class="btn btn-primary" style="margin:5px;">+ Project details</button>
+                        </div>
+                        <div *ngIf="instaSalleIsShown" class="mt-3">
+                            <p>Project where various sorting algorithms are implemented to be able to compare them by different sorting criteria, 
+                                the information to sort is provided by a file in JSON format.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+
+                    <div  class="card-header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div  id="mautic-img" class="img-wrap" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/combinatorialAlgorithms-image.png)'}" >
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">InstaSalle2</h3>
+                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                        <p class="card-text">IntelliJ IDEA, JSON</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/alexanderroca/InstaSalle2" target="_blank" type="button" class="btn btn-primary mr-3" style="margin:5px;">Code Source</a> 
+                            <button (click)="detailOnClick('instaSalle2')"  type="button" class="btn btn-primary" style="margin:5px;">+ Project details</button>
+                        </div>
+                        <div *ngIf="instaSalleIsShown2" class="mt-3">
+                            <p>Project where various combinatorial algorithms are implemented such as <strong>Backtracking</strong>, <strong>Branch&Bound</strong>, 
+                                <strong>Greedy</strong> and the combination between them (like Greedy + Backtracking and Greedy + Branch&Bound), the information 
+                                to be ordered is provided by a file in json format. <strong>Warning</strong>: statement is in catalan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+
+                    <div  class="card-header d-flex flex-column " style="height: 300px;width: 100%; "  >    
                         <div  id="mautic-img" class="img-wrap" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/hashtable-image.png)'}" >
                         </div>
                     </div>
